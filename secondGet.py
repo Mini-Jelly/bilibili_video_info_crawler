@@ -50,6 +50,7 @@ def fetch_video_info(bv_number):
     # 默认失败返回值
     default_data = {
         "BV号": bv_number,
+        "标题": -1,
         "作者": -1,
         "作者id": -1,
         "视频时长": -1,
@@ -137,9 +138,10 @@ def main():
     # 定义 CSV 表头
     fieldnames = [
         "BV号",
-        "标题作者",
+        "标题",
+        "作者",
         "作者id",
-        "视频时长（秒）",
+        "视频时长",
         "发布时间",
         "播放量",
         "点赞",
